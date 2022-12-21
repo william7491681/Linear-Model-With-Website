@@ -8,7 +8,7 @@ export default function App() {
 
   function getData() {
 
-    axios.get(`http://localhost:8080`, {params: {
+    axios.get(`http://localhost:5000`, {params: {
       carats: parseFloat(document.getElementById("carats").value),
       clarity: document.getElementById("clarity").value,
       color: document.getElementById("color").value
@@ -41,7 +41,7 @@ export default function App() {
               Clarity
             </label>
             <select className="w-[200px] h-[60px] text-center rounded-md pr-1 pl-4 mt-2 text-xl
-            shadow-md shadow-black bg-gray-50"
+            shadow-md shadow-black bg-gray-50 hover:cursor-pointer"
             id='clarity'>
               <option defaultValue="IF">IF</option>
               <option value="VVS1">VVS1</option>
@@ -58,7 +58,7 @@ export default function App() {
               Color
             </label>
             <select className="w-[200px] h-[60px] text-center rounded-md pr-1 pl-4 mt-2 text-xl
-            shadow-md shadow-black bg-gray-50"
+            shadow-md shadow-black bg-gray-50 hover:cursor-pointer"
             id='color'>
               <option defaultValue="D">D</option>
               <option value="E">E</option>

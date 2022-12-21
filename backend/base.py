@@ -2,7 +2,7 @@ from flask import Flask, request, jsonify
 import pandas as pd
 import statsmodels.formula.api as smf
 
-df = pd.read_csv(r"C:/Users/wdines/OneDrive - DXC Production/Desktop/Demo App/demo_app/backend/diamonds.csv")
+df = pd.read_csv(r"C:/Users/wdines/OneDrive - DXC Production/Desktop/demoApp/demo_app/backend/diamonds.csv")
 # Descriptions for non-obvious columns:
 # cut - fair, good, very good, premium, ideal
 # color - J (worst) - D (best)
